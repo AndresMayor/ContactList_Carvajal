@@ -3,6 +3,11 @@
 ## Developed by 🛠️
 * **Jaime Andrés Mayor Aldana**  [AndresMayor](https://github.com/AndresMayor)🚀
 
+## Repositorios🛠️
+* **El frontend se desarrollo en este repositorio** [FrontendContactList](https://github.com/AndresMayor/FrontendContactList)🚀
+
+* **El beackend se desarrollo en este repositorio** [BackendContactList](https://github.com/AndresMayor/BackendContactList)🚀
+
 ## Requerimientos
 
 -Node instalado.
@@ -58,7 +63,7 @@
 
 ![Diagrama de secuencua Login y Registar Usario ](./Documentacion/DsLoginRegisterUser.drawio.svg "Actualizar contacto")
 
-#Docker
+# Docker
 
 ## Script para contruir imagen y iniciar  el contenedor del Frontend
 
