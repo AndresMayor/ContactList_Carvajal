@@ -57,3 +57,13 @@
 # Diagrama de secuencia actualizar datos de un contacto
 
 ![Diagrama de secuencua Login y Registar Usario ](./Documentacion/DsLoginRegisterUser.drawio.svg "Actualizar contacto")
+
+#Docker
+
+## Script para contruir imagen y iniciar  el contenedor del Frontend
+
+    docker build -t andres192715/frontend .   
+    
+    docker run -t -d andres192715/frontend
+
+## Script para constuir el contenedor del Backend
