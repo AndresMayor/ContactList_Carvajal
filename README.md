@@ -41,7 +41,9 @@
     
     npm start
 
+# Diagrama Entidad - Relacion
 
+![Diagrama Entidad - Relacion ](./Documentacion/DEntidadRelacion.drawio.svg "Diagrama base de datos")
 
 # Diagrama de secuencia Login y Registrar Usurario
 
