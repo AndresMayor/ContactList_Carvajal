@@ -74,7 +74,7 @@
 
     docker build -t andres192715/frontend .   
     
-    docker run -t -d andres192715/frontend
+    docker run -t -d -p 3000:3000 andres192715/frontend
 
 ## Script para constuir el contenedor del Backend
 
