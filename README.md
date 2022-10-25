@@ -44,8 +44,6 @@
     npm run dev
 
 ### Script para iniciar el frontend
-
-    cd frontendcl
     
     npm install
     
