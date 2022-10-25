@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  db:
+    build: ./mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: PTCarvajal
+    restart: always
+  web:
+    depends_on:
+      - db
+    build: ./web
+    environment:
+      MYSQL_DATABASE: PTCarvajal
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_HOST: db
+    ports:
+      - "3001:3001"
+
+    restart: on-failure

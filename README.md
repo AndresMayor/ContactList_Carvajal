@@ -40,6 +40,8 @@
 ## Script para iniciar el backend
     
     cd backendcl
+
+    cd web
     
     npm install 
 
@@ -78,8 +80,8 @@
     
     docker run -t -d -p 3000:3000 andres192715/frontend
 
-## Script para constuir el contenedor del Backend
+## Script para constuir los sevicios del Backend apartir del docker-compose 
 
-     docker build -t andres192715/backend .   
+    cd backendcl
     
-     docker run -t -p 3001:3001  andres192715/backend
+    docker-compose up 
