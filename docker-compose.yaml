@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   db:
-    build: ./mysql
+    build: ./backendcl/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: PTCarvajal
@@ -9,7 +9,7 @@ services:
   web:
     depends_on:
       - db
-    build: ./web
+    build: ./backendcl/web
     environment:
       MYSQL_DATABASE: PTCarvajal
       MYSQL_USER: root
@@ -17,5 +17,9 @@ services:
       MYSQL_HOST: db
     ports:
       - "3001:3001"
-
     restart: on-failure
+
+  front:
+    build: ./frontendcl
+    ports:
+      - "3000:3000"

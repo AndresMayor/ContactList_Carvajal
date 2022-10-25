@@ -74,14 +74,8 @@
 
 # Docker
 
-## Script para contruir imagen y iniciar  el contenedor del Frontend
+## Script para construir los contenedores necesarios para desplegar la app
 
-    docker build -t andres192715/frontend .   
-    
-    docker run -t -d -p 3000:3000 andres192715/frontend
+    docker-compose up
 
-## Script para constuir los sevicios del Backend apartir del docker-compose 
 
-    cd backendcl
-    
-    docker-compose up 
