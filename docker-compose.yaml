@@ -2,10 +2,25 @@ version: "3.8"
 services:
   db:
     build: ./backendcl/mysql
+    hostname: database
+    # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+    # (this is just an example, not intended to be a production configuration)
+    command: --default-authentication-plugin=mysql_native_password
+    #volumes:
+    #  - ./backendcl/mysql/database.sql:/docker-entrypoint-initdb.d:rw
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: PTCarvajal
+
+  adminer:
+    image: adminer
     restart: always
+    ports:
+      - 8080:8080
+  front:
+    build: ./frontendcl
+    ports:
+      - "3000:3000"      
   web:
     depends_on:
       - db
@@ -14,12 +29,8 @@ services:
       MYSQL_DATABASE: PTCarvajal
       MYSQL_USER: root
       MYSQL_PASSWORD: password
-      MYSQL_HOST: db
+      MYSQL_HOST: contactlist_carvajal-db-1
     ports:
       - "3001:3001"
     restart: on-failure
 
-  front:
-    build: ./frontendcl
-    ports:
-      - "3000:3000"

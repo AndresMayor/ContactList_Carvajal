@@ -23,7 +23,7 @@ app.use('/login', require('./routes/userlogin'))
 app.listen(port, () => {
 
   //nos recra las tablas Force true: Drop Tables 
-  sequelize.sync({force: false}).then(()=>{
+  sequelize.sync({force: true}).then(()=>{
     console.log('nos hemos conectado a la base de datos' )
   }).catch(error=>{
     console.log('se ha producido un error',error)
