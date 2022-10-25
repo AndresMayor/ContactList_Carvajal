@@ -38,12 +38,16 @@
 -API-REST.
 
 ## Script para iniciar el backend
-
+    
+    cd backendcl
+    
     npm install 
 
     npm run dev
 
 ### Script para iniciar el frontend
+    
+    cd frontendcl
     
     npm install
     
@@ -55,16 +59,16 @@
 
 # Diagrama de secuencia Login y Registrar Usurario
 
-![Diagrama de secuencua Login y Registar Usario ](./Documentacion/DsUpdateContact.drawio.svg "Login y Registar Usuario")
+![Diagrama de secuencua Login y Registar Usario ](./Documentacion/DsLoginRegisterUser.drawio.svg "Login y Registar Usuario")
 
 
 # Diagrama de secuencia añadir contacto  y eliminar contacto
 
-![Diagrama de secuencua Login y Registar Usario ](./Documentacion/DsCreatedContactDeleteContact.drawio.svg "Añadir y eliminar contacto ")
+![Diagrama de secuencia añadir contacto  y eliminar contacto](./Documentacion/DsCreatedContactDeleteContact.drawio.svg "Añadir y eliminar contacto ")
 
 # Diagrama de secuencia actualizar datos de un contacto
 
-![Diagrama de secuencua Login y Registar Usario ](./Documentacion/DsLoginRegisterUser.drawio.svg "Actualizar contacto")
+![Diagrama de secuencia actualizar datos de un contacto ](./Documentacion/DsUpdateContact.drawio.svg "Actualizar contacto")
 
 # Docker
 
