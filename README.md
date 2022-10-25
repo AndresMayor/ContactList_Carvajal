@@ -19,7 +19,7 @@
 
 -NPM instalado.
 
--Una base de datos MySQl corriendo en el purto 3306 con  nombre PTCarvajal y con un determinado  usuario y contraseña 
+-Una base de datos MySQl corriendo en el puerto 3306 con  nombre PTCarvajal y con un determinado  usuario y contraseña 
 
 -Ingrese las credenciales creadas en el bancked/config.js
 
