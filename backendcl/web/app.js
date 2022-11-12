@@ -7,8 +7,8 @@ require('./database/asociations');
 
 
 //Middlewere 
-//Para parsear para enviar en json
-
+//para poder rellanar el req.body
+//para poder leer lo que nos envian si es tipo json 
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))

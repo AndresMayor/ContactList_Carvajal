@@ -1,6 +1,7 @@
 
-import { BASEURL } from "../constants/Constants";
+//import { BASEURL } from "../constants/Constants";
 
+const BASEURL = process.env.SERVER_BACKEND || "http://localhost:3001"
 
 const post = async (url, data) => {
     let response = await fetch(
